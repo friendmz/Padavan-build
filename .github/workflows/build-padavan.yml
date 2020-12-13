@@ -44,7 +44,7 @@ jobs:
         sed -i "s#go1.14.linux-amd64.tar.gz#go\$(go_version).linux-amd64.tar.gz#g" ./Makefile
     - name: Build Firmware
       env:
-        TNAME: MI-MINI
+        TNAME: K2P-5.0
       run: |
         cd /opt/rt-n56u/trunk
         if [ ! -f configs/templates/$TNAME.config ] ; then
